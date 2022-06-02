@@ -1917,7 +1917,7 @@ static int __init gasket_init(void)
 	return 0;
 }
 
-static int __exit gasket_exit(void)
+static void __exit gasket_exit(void)
 {
 	/*
 	 * No resources of our own to release, but we can't be unloaded
