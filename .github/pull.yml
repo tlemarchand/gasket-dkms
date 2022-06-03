@@ -1,7 +1,7 @@
 version: "1"
 rules:
-  - base: master
-    upstream: google:master
+  - base: main
+    upstream: google:main
     mergeMethod: merge
     mergeUnstable: false
     assignees:
