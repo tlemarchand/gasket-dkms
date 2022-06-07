@@ -25,7 +25,7 @@ The Coral Gasket Driver allows usage of the Coral EdgeTPU on Linux systems. The 
 %install
 # Create empty tree
 mkdir -p %{buildroot}%{_usrsrc}/%{dkms_name}-%{version}/
-cp -fr * %{buildroot}%{_usrsrc}/%{dkms_name}-%{version}/
+cp -fr src/* %{buildroot}%{_usrsrc}/%{dkms_name}-%{version}/
 
 install -d %{buildroot}%{_sysconfdir}/modules-load.d
 cat > %{buildroot}%{_sysconfdir}/modules-load.d/gasket.conf << EOF
@@ -53,6 +53,8 @@ dkms install -m %{dkms_name} -v %{version} -q --force || :
 dkms remove -m %{dkms_name} -v %{version} -q --all || :
 
 %files
+%license LICENSE
+%doc README.md
 %{_usrsrc}/%{dkms_name}-%{version}
 %{_sysconfdir}/modules-load.d/gasket.conf
 %{_sysconfdir}/udev/rules.d/65-apex.rules
