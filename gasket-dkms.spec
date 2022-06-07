@@ -38,6 +38,9 @@ cat > %{buildroot}%{_sysconfdir}/udev/rules.d/65-apex.rules << EOF
 SUBSYSTEM=="apex", MODE="0660", GROUP="apex"
 EOF
 
+%pre
+getent group apex >/dev/null || groupadd -r apex
+
 %post -n %{name}
 if [ -S /run/udev/control ]; then
     udevadm control --reload
