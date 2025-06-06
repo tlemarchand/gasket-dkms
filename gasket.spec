@@ -7,7 +7,7 @@ Version:  {{{ git_dir_version }}}
 Release:  1%{?dist}
 Summary:  The Coral Gasket Driver allows usage of the Coral EdgeTPU on Linux systems
 License:  GPLv2
-URL:      https://github.com/KyleGospo/gasket-dkms/
+URL:      https://github.com/tlemarchand/gasket-dkms
 
 Source:   %{url}/archive/refs/heads/main.tar.gz
 
