@@ -10,6 +10,6 @@ Includes all necessary fixes to run on 6.12+ kernels (Fedora 41 and 42).
 
 ## Installing
 
-You can get releases for Fedora, RHEL, CentOS, OpenSUSE, and OpenMandriva from my [Copr](https://copr.fedorainfracloud.org/coprs/tlemarchand/google-coral-dkms/).
+You can get releases and installation instructions for Fedora, RHEL, CentOS, OpenSUSE, and OpenMandriva from my [Copr](https://copr.fedorainfracloud.org/coprs/tlemarchand/google-coral-dkms/).
 
 If you wish to use this with Secure Boot, follow [this guide](https://gist.github.com/KyleGospo/9adbe078d1d7f160ae43c091df98f773).
