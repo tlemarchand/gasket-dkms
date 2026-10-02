@@ -6,7 +6,7 @@ The Coral Gasket Driver allows usage of the [Coral EdgeTPU](https://coral.ai/) o
 * Gasket: Gasket (Google ASIC Software, Kernel Extensions, and Tools) is a top level driver for lightweight communication with Google ASICs.
 * Apex: Apex refers to the [EdgeTPU v1](https://coral.ai/technology)
 
-Includes all necessary fixes to run on 6.12+ kernels (Fedora 41 and 42).
+Includes all necessary fixes to run on 7.1+ kernels (Fedora 43 and 44).
 
 ## Installing
 
